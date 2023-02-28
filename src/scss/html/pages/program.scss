@@ -1,0 +1,116 @@
+.program-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+
+        &:nth-child(1),&:nth-child(2),&:nth-child(3) {
+            width: calc(100% / 3 - 20px);
+
+            @media (max-width: 991px) {
+                width: 100%;
+
+                .item__list {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            @media (max-width: 600px) {
+                .item__list {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+
+        &:nth-child(4),&:nth-child(5) {
+            width: calc(100% / 2 - 20px);
+
+            @media (max-width: 991px) {
+                width: 100%;
+            }
+
+            .item__list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                @media (max-width: 600px) {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+
+        &-heading {
+            display: flex;
+            align-items: center;
+        }
+
+        &__title {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            color: $colorPrimary;
+            font-size: 32px;
+            font-weight: 600;
+
+            span {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                background: $colorSecondary; 
+                color: white;
+                border-radius: 50%;
+                text-align: center;
+                font-size: 40px;
+                line-height: 1.2;
+                font-weight: 500;
+            }
+
+            @media (max-width: 991px) {
+                font-size: 24px;
+
+                span {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        &__arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+
+            svg {
+                width: 30px;
+                height: 30px;
+                color: $colorPrimary;
+            }
+        }
+
+        &__list {
+            li {
+                font-size: 20px;
+                font-weight: 500;
+
+                @media (max-width: 991px) {
+                    font-size: 16px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

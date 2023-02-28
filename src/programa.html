@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('html/base/head.html', {
+    "title": "Головна"
+})
+
+<body class="is-not-home">
+    @@include('html/base/header.html')
+
+    <main>
+        <div class="container">
+            @@include('./html/sections/breadcrumb.html')
+            @@include('./html/sections/title.html', {
+                title: 'Программа курсу'
+            })
+            @@include('./html/pages/programa/programa.html')
+        </div>
+    </main>
+
+    @@include('html/base/footer.html')
+
+    <script src="js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.module-list {
+    .module {
+        position: relative;
+        display: grid;
+        grid-template-columns: 70px auto 260px;
+        align-items: center;
+        padding: 10px 0;
+        padding-right: 30px;
+        gap: 20px;
+
+        @media (max-width: 767px) {
+            grid-template-columns: auto;
+            padding-right: 0;
+        }
+        
+        &:not(:last-child) {border-bottom: 1px solid #D9D9D9;}
+
+        &__num {
+            color: $colorPrimary;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        &__title {
+            font-size: 16px;
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__tags {
+            display: flex;
+            gap: 10px;
+            margin-left: auto;
+
+            @media (max-width: 767px) {
+                position: absolute;
+                top: 7px;
+                right: 0;
+            }
+
+            span {
+                padding: 5px 8px;
+                background: $colorSecondary;
+                color: white;
+                border-radius: 50px;
+                font-weight: 500;
+            }
+        }
+    }
+}

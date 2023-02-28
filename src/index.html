@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('html/base/head.html', {
+    "title": "Головна"
+})
+
+<body class="is-home">
+    @@include('html/base/header.html')
+
+    <main>
+        @@include('html/pages/home/intro.html')
+        @@include('html/pages/home/block-cases.html')
+        @@include('html/pages/home/block-lesson.html')
+        @@include('html/pages/home/block-login.html')
+        @@include('html/pages/home/block-numbers.html')
+        @@include('html/pages/home/block-price.html')
+        @@include('html/pages/home/block-reviews.html')
+        @@include('html/pages/home/block-faq.html')
+    </main>
+
+    @@include('html/base/footer.html')
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

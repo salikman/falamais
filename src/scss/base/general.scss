@@ -1,0 +1,119 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #F3FAF6;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.2;
+}
+
+// font
+body {
+    color: $colorText;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main {
+    flex: 1;
+    padding-top: 100px;
+
+    @media (max-width: 991px) {
+        overflow: hidden;
+    }
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    color: transparent;
+    image-rendering: auto;
+}
+
+article>*+* {
+    margin-top: 1em
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 1420px;
+    width: 100%;
+}
+
+// lazyLoad
+.lazy-load {
+    position: relative;
+    padding: 0 0 90% 0;
+    background: url("../img/loading.gif") center / 50px no-repeat;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+// btn 
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 18px 50px;
+    background-color: transparent;
+    border: 2px solid $colorPrimary;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @media (max-width: 1365px) {
+        padding: 14px 20px;
+    }
+
+    &--bgfull {
+        background-color: $colorPrimary;
+        color: white;
+    }
+}
+
+.page-content {
+    padding-bottom: 50px;
+}
