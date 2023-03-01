@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230228175750">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20230301201756" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20230301201756">
     <title>Головна</title>
 </head>
 
@@ -23,14 +24,14 @@
             <div class="header__phone">
                 <div class="phone-trigger"><svg><use href="img/icons/icons.svg#phone"></use></svg>Контакти</div>
                 <ul class="phone-dropdown">
-                    <li><a href="tel:+">+55 555 5555 55</a></li>
-                    <li><a href="tel:+">Whatsapp</a></li>
-                    <li><a href="tel:+">Telegram</a></li>
-                    <li><a href="tel:+">Viber</a></li>
+                    <li><a href="tel:+"><picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture>+55 555 5555 55</a></li>
+                    <li><a href="tel:+"><picture><source srcset="img/wt.webp" type="image/webp"><img src="img/wt.png" alt=""></picture>Whatsapp</a></li>
+                    <li><a href="tel:+"><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture>Telegram</a></li>
+                    <li><a href="tel:+"><picture><source srcset="img/vr.webp" type="image/webp"><img src="img/vr.png" alt=""></picture>Viber</a></li>
                 </ul>
             </div>
             <div class="header__buttons">
-                <a href="#" class="btn"><span>Увійти</span></a>
+                <a data-fancybox="" data-src="#login-user" href="javascript:;" class="btn"><span>Увійти</span></a>
                 <a href="#" class="btn btn--bgfull"><span>Зареєструватись</span></a>
             </div>
             <div class="header__collapse"><span></span></div>
@@ -239,6 +240,8 @@
     </div>
 </footer>
 
-    <script src="js/app.min.js?_v=20230228175750"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230301201756" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20230301201756" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js?_v=20230301201756"></script>
 </body>
 </html>

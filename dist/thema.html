@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20230301201756" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20230301201756">
+    <title>Головна</title>
+</head>
+
+<body class="is-not-home">
+    <header class="header">
+    <div class="container">
+        <div class="header-wrapper">
+            <a href="/" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Falamais."></picture></a>
+            <div class="header__menu">
+                <ul class="menu">
+                    <li class="menu__item"><a href="#">Программа курсу</a></li>
+                    <li class="menu__item"><a href="#">Вартість навчання</a></li>
+                    <li class="menu__item"><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="header__phone">
+                <div class="phone-trigger"><svg><use href="img/icons/icons.svg#phone"></use></svg>Контакти</div>
+                <ul class="phone-dropdown">
+                    <li><a href="tel:+"><picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture>+55 555 5555 55</a></li>
+                    <li><a href="tel:+"><picture><source srcset="img/wt.webp" type="image/webp"><img src="img/wt.png" alt=""></picture>Whatsapp</a></li>
+                    <li><a href="tel:+"><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture>Telegram</a></li>
+                    <li><a href="tel:+"><picture><source srcset="img/vr.webp" type="image/webp"><img src="img/vr.png" alt=""></picture>Viber</a></li>
+                </ul>
+            </div>
+            <div class="header__buttons">
+                <a data-fancybox="" data-src="#login-user" href="javascript:;" class="btn"><span>Увійти</span></a>
+                <a href="#" class="btn btn--bgfull"><span>Зареєструватись</span></a>
+            </div>
+            <div class="header__collapse"><span></span></div>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container">
+            <div class="breadcrumb">
+    <ul>
+        <li><a href="#">программа курсу</a></li>
+        <li>граматика</li>
+    </ul>
+</div>
+            <div class="page-title">
+    <a href='#' class='next'><svg><use href='img/icons/icons.svg#arrow-big'></use></svg>Аудіо практика</a>
+    <h1>Тема 1</h1>
+    <a href='#' class='prev'><svg><use href='img/icons/icons.svg#arrow-big'></use></svg>Дієслова. Словник</a>
+</div>
+            <div class="page-content">
+    <div class="thema-question">
+        <div class="thema__text">Іменник (Substantivo) Чоловічий та жіночий рід, однина та множина. Означений артикль та неозначений артикль. Рід та число. Зливання їх
+        </div>
+
+        <div class="thema-wrapper">
+            <div class="thema__video">
+                <video src="img/present-perfect-continuous.mp4" type="video/mp4"></video>
+            </div>
+    
+            <div id="app" class="test-container">
+                <div class="test">
+                    <div class="question__list">
+                        <a data-fancybox="" data-animation-duration="300" data-animation-effect="slide-in-out" data-src="#question-list" href="javascript:;">
+                            <svg><use href="img/icons/icons.svg#grid"></use></svg>
+                            Список питань
+                        </a>
+                        <div class="question__number">
+                            Питання <span>1</span> з <span>25</span>
+                        </div>
+                    </div>
+                    
+                    <div class="slider">
+                        <div class="slide slide__1">
+                            <div class="slide__question">
+                                <p><strong>Put the verb in the correct form,present perfect or present perfect
+                                        continuous.</strong></p>
+                                <p>&nbsp;</p>
+                                <p>1.You meet Kate as she is leaving the swimming pool.</p>
+                                <p>You say:Hi,Kate. _________ (you / swim?)</p>
+                            </div>
+                            <div class="slide__answers">
+    
+                                <label class="answer__wrong" for="radio-0">Has you swum?
+                                    <input type="radio" name="question" id="radio-0">
+                                    <span class="checkmark"></span>
+    
+                                </label>
+    
+                                <label class="answer__correctly" for="radio-1">You have been swimming?
+                                    <input type="radio" name="question" id="radio-1">
+                                    <span class="checkmark"></span>
+    
+                                </label>
+    
+                                <label class="" for="radio-2">Have you been swimming?
+                                    <input type="radio" name="question" id="radio-2">
+                                    <span class="checkmark"></span>
+    
+                                </label>
+    
+                                <label class="" for="radio-3">Have you swum?
+                                    <input type="radio" name="question" id="radio-3">
+                                    <span class="checkmark"></span>
+    
+                                </label>
+    
+                            </div>
+                            <div class="slide__message" id="test__slide__message">
+                                <div class="correctly"><span>Правильно!</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="test__btn">
+                        <div class="test__left">
+                            <a class="btn--skip" href="javascript:;" id="test-skip">Пропустити</a>
+                        </div>
+                        <div class="test__right">
+                            <a class="btn btn--right btn--bgfull" href="javascript:;" id="test-set-answer">
+                                <span class="btn__text">Відповісти</span><span class="btn__border"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </main>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-wrapper">
+            <nav class="footer__menu">
+                <a href="#">Программа курсу</a>
+                <a href="#">Вартість навчання</a>
+                <a href="#">FAQ</a>
+            </nav>
+            <ul class="footer__phones">
+                <li><a href="#"><picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt=""></picture><span>+55 555 5555 55</span></a></li>
+                <li><a href="#"><picture><source srcset="img/wt.webp" type="image/webp"><img src="img/wt.png" alt=""></picture><span>Whatsapp</span></a></li>
+                <li><a href="#"><picture><source srcset="img/tg.webp" type="image/webp"><img src="img/tg.png" alt=""></picture><span>Telegram</span></a></li>
+                <li><a href="#"><picture><source srcset="img/vr.webp" type="image/webp"><img src="img/vr.png" alt=""></picture><span>Viber</span></a></li>
+            </ul>
+            <div class="footer__copy">Copyright © 2023. All rights reserved.</div>
+        </div>
+    </div>
+</footer>
+    <div id="question-list" style="display: none;" class="fancybox-content">
+    <div class="table">
+        <div class="table__header">
+            <div class="table__col-10">Питання</div>
+            <div class="table__col-2">Результат</div>
+        </div>
+        <div class="table__body">
+
+            <a class="table__row test-set-question" data-question-index="0" href="#">
+                <div class="table__col-10">
+                    <p></p>
+                    <p><strong>Put the verb in the correct form,present perfect or present perfect continuous.</strong>
+                    </p>
+                    <p>1.You meet Kate as she is leaving the swimming pool.</p>
+                    <p>You say:Hi,Kate. _________ (you / swim?)</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+                    <span class="uncheck"><svg><use href="img/icons/icons.svg#uncheck"></use></svg></span>
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="1" href="#">
+                <div class="table__col-10">
+                    <!--<span>2</span>-->
+                    <p></p>
+                    <p>2.You have arrived a little late to meet Ben who is waiting for you.</p>
+                    <p>You say:I’m sorry I’m late,Ben. ______&nbsp;(you/wait/long?)</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+                    <span class="check"><svg><use href="img/icons/icons.svg#check"></use></svg></span>
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="2" href="#">
+                <div class="table__col-10">
+                    <!--<span>3</span>-->
+                    <p></p>
+                    <p>3.Jane’s little boy comes into the house with a very dirty face and dirty hands.</p>
+                    <p>His mother says:Why are you so dirty? _________ (what/you/do?)</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="3" href="#">
+                <div class="table__col-10">
+                    <!--<span>4</span>-->
+                    <p></p>
+                    <p>4.You are in a shop and see Anna. You didn’t know she worked there.</p>
+                    <p>You say:Hi, Anna. _________ (how long/you/work/here?)</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="4" href="#">
+                <div class="table__col-10">
+                    <!--<span>5</span>-->
+                    <p></p>
+                    <p>5.A friend tells you about his job – he sells phones.</p>
+                    <p>You say:You sell phones? ________ (how long/you/do/that?)</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="5" href="#">
+                <div class="table__col-10">
+                    <!--<span>6</span>-->
+                    <p></p>
+                    <p>6.It’s raining.The rain started two hours ago.It _________ (rain) for two hours.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="6" href="#">
+                <div class="table__col-10">
+                    <!--<span>7</span>-->
+                    <p></p>
+                    <p>7.We are waiting for the bus.We started waiting 20 minutes ago.We _________ (wait) for 20
+                        minutes.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="7" href="#">
+                <div class="table__col-10">
+                    <!--<span>8</span>-->
+                    <p></p>
+                    <p>8.I’m learning Japanese.I started classes in December.I _________ (learn) Japanese since
+                        December.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="8" href="#">
+                <div class="table__col-10">
+                    <!--<span>9</span>-->
+                    <p></p>
+                    <p>9.Jessica is working in a hotel.She started working there on 18 January.She _________ (work)
+                        since 18 January.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="9" href="#">
+                <div class="table__col-10">
+                    <!--<span>10</span>-->
+                    <p></p>
+                    <p>10.Our friends always go to Italy for their holidays.The first time was years
+                        ago.They_________&nbsp; (go) there for years.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="10" href="#">
+                <div class="table__col-10">
+                    <!--<span>11</span>-->
+                    <p></p>
+                    <p>11.Look!Somebody __________ (break) that window.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="11" href="#">
+                <div class="table__col-10">
+                    <!--<span>12</span>-->
+                    <p></p>
+                    <p>12.You look tired. ________ (you/work) hard?</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="12" href="#">
+                <div class="table__col-10">
+                    <!--<span>13</span>-->
+                    <p></p>
+                    <p>13. ________ (you/ever/work) in a factory?No, never.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="13" href="#">
+                <div class="table__col-10">
+                    <!--<span>14</span>-->
+                    <p></p>
+                    <p>14.Where’s Lisa?Where _________ (she/go)?</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="14" href="#">
+                <div class="table__col-10">
+                    <!--<span>15</span>-->
+                    <p></p>
+                    <p>15.This is a very old book.I&nbsp; _________ (have) it since I was a child.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="15" href="#">
+                <div class="table__col-10">
+                    <!--<span>16</span>-->
+                    <p></p>
+                    <p>16.Have you been busy?No, I _________ (watch) TV.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="16" href="#">
+                <div class="table__col-10">
+                    <!--<span>17</span>-->
+                    <p></p>
+                    <p>17.My brother is an actor.He ________ (appear) in several films.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="17" href="#">
+                <div class="table__col-10">
+                    <!--<span>18</span>-->
+                    <p></p>
+                    <p>18.Sorry I’m late.That’s all right.I _________ (not/wait) long.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="18" href="#">
+                <div class="table__col-10">
+                    <!--<span>19</span>-->
+                    <p></p>
+                    <p>19.Are you OK? You look as if you ________ (cry).</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="19" href="#">
+                <div class="table__col-10">
+                    <!--<span>20</span>-->
+                    <p></p>
+                    <p>20.Is it still raining?No,it ________ (stop).</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="20" href="#">
+                <div class="table__col-10">
+                    <!--<span>21</span>-->
+                    <p></p>
+                    <p>21.The children are tired now.They ________ (play) in the garden.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="21" href="#">
+                <div class="table__col-10">
+                    <!--<span>22</span>-->
+                    <p></p>
+                    <p>22.I _________ (lose) my phone. _________ (you/see) it?</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="22" href="#">
+                <div class="table__col-10">
+                    <!--<span>23</span>-->
+                    <p></p>
+                    <p>23.I __________ (read) the book you lent me,but I _________ (not/finish) it yet.It’s really
+                        interesting.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="23" href="#">
+                <div class="table__col-10">
+                    <!--<span>24</span>-->
+                    <p></p>
+                    <p>24.I _________ (read) the book you lent me,so you can have it back now.</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+            <a class="table__row test-set-question" data-question-index="24" href="#">
+                <div class="table__col-10">
+                    <!--<span>25</span>-->
+                    <p></p>
+                    <p>25.Tom started reading a book two hours ago.He is still reading it and now he is on page 53.He
+                        _______ (read) for two hours.&nbsp;</p>
+                    <p></p>
+                </div>
+                <div class="table__col-2">
+
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <!-- <a class="modal-close" href="javascript:;" onclick="jQuery.fancybox.close();"><i class="fa fa-close"></i></a> -->
+    <button type="button" data-fancybox-close="" class="fancybox-button fancybox-close-small" title="Close"><svg
+            xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+            <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+        </svg></button>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230301201756" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20230301201756" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js?_v=20230301201756"></script>
+</body>
+</html>

@@ -1,10 +1,14 @@
 @import './base/header';
 @import './base/footer';
 
+// elements
+@import './elements/modals';
+
 // pages
 @import './pages/home';
 @import './pages/program';
 @import './pages/module';
+@import './pages/thema';
 
 // sections
 @import './sections/title';

@@ -9,15 +9,11 @@
 
     &-wrapper {
         display: flex;
-        align-items: center;
+        align-items: stretch;
         gap: 10px;
-        padding: 20px 0;
 
         @media (min-width: 992px) {
             justify-content: space-between;
-        }
-        @media (max-width: 991px) {
-            padding: 15px 0;
         }
     }
 
@@ -39,7 +35,28 @@
         }
     }
 
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+
     &__phone {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+
+        &:hover, &:focus {
+            .phone-dropdown {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(-50%) translateY(0);
+
+                @media (max-width: 991px) {
+                    transform: translateY(0);
+                }
+            }
+        }
         @media (max-width: 991px) {margin-left: auto;}
 
         .phone-trigger {
@@ -64,13 +81,42 @@
         }
 
         .phone-dropdown {
-            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: max-content;
+            height: auto;
+            padding: 5px 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            transition: all .3s ease;
+
+            opacity: 0;
+            visibility: hidden;
+            appearance: none;
+            transform: translateX(-50%) translateY(50px);
+
+            @media (max-width: 991px) {
+                left: auto;
+                right: 0;
+                transform: translateY(50px);
+            }
+
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 5px 10px;
+                }
+            }
         }
     }
 
     &__buttons {
         display: flex;
         gap: 5px;
+        padding: 10px 0;
 
         @media (max-width: 991px) {
             display: none;
@@ -80,9 +126,9 @@
     &__collapse {
         display: flex;
         align-items: center;
-        justify-content: center;
+        // justify-content: center;
         width: 32px;
-        height: 32px;
+        margin-left: 20px;
 
         @media (min-width: 992px) {
             display: none;

@@ -32,3 +32,19 @@ var swiper = new Swiper(".block-reviews-slider", {
 
 //
 new Accordion('.accordion-container');
+
+$(document).on('click','.js-star-rating .star span' ,function () {
+    var $this = $(this);
+
+    var $topParent = $this.closest('.js-star-rating');
+    var $parent = $this.closest('.star');
+    var $input = $($topParent.data('for'));
+
+
+    var $starElements = $parent.find('span');
+    $starElements.removeClass('checked');
+    var index = $($starElements).index($this)+1;
+    $starElements.slice(0,index).addClass('checked');
+
+    $input.val(index);
+});
